@@ -1,0 +1,8 @@
+*.o
+.main.c.swp
+*.c~
+#main.c#
+*~
+main
+.clang-format
+*.git
