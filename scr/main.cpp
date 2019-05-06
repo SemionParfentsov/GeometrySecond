@@ -1,22 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include "foo.h"
+#include <iostream>
+#include <math.h>
+using namespace std;
+const float PI = 3.1415;
 int main()
 {
-    FILE *file;
-    char buffer [50];
-    file = fopen ("/home/students/2018/ip814s19/Рабочий стол/HelloWorld/GeometrySecond/scr/circle.txt","w+t");
-    int x,y;
-    double R;
-    printf ("circle(");
-    scanf ("%d %d",&x,&y);
-    printf (",");
-    scanf ("%lf",&R);
-    fprintf (file,"circle(%d %d, %1.1lf)",x,y,R);
-    fclose (file);
-    file = fopen ("/home/students/2018/ip814s19/Рабочий стол/HelloWorld/GeometrySecond/scr/circle.txt","r");
-    fgets (buffer,50,file);
-    printf ("%s",buffer);
-    fclose (file);
+    int a, b, c, r;
+    float p, s;
+
+    cout << "Enter radius of circle: ";
+    cin >> r;
+    p = PerimetrC(r, PI);
+    s = SquareC(r, PI);
+    cout << "Perimetr: " << p << "  Square:  " << s << endl;
+
+    cout << "Enter sides of triangle(a,b,c): ";
+    cin >> a >> b >> c;
+    p = PerimetrT(a, b, c);
+    s = SquareT(a, b, c);
+    cout << endl << "Perimetr: " << p << "   Square: " << s;
     return 0;
 }
