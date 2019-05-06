@@ -1,8 +1,33 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.1o
 *.o
-.main.c.swp
-*.c~
-#main.c#
-*~
-main
-.clang-format
-*.git
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libries
+*.so
+*.dylib
+*.dll
+
+# Fortran maodule files 
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+.git 
